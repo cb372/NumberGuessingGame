@@ -8,14 +8,17 @@ import java.io.OutputStreamWriter;
  * Author: chris
  * Created: 6/2/14
  */
-public class NumberWriter {
+public final class NumberWriter {
 
-    static void writeToFile(Integer number) throws IOException {
+    private NumberWriter() {
+    }
+
+    static void writeToFile(final int number, final String charset) throws IOException {
         try(
                 FileOutputStream stream = new FileOutputStream("number.txt");
-                OutputStreamWriter out = new OutputStreamWriter(stream)
+                OutputStreamWriter out = new OutputStreamWriter(stream, charset)
         ) {
-            out.write(number.toString());
+            out.write(number);
         }
     }
 

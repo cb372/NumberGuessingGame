@@ -1,12 +1,17 @@
 package com.github.cb372.guessing;
 
+import java.io.IOException;
+
 /**
  * Author: chris
  * Created: 6/2/14
  */
-public class Main {
+public final class Main {
 
-    public static void main(String[] args) throws Exception {
+    private Main() {
+    }
+
+    public static void main(String[] args) throws IOException {
         new Game().run();
     }
 
