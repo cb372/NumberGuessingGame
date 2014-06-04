@@ -13,9 +13,10 @@ import java.util.Scanner;
 public class Game {
 
     private static final Random rnd = new Random();
+    private static final int MAX = 10;
 
     public void run() throws IOException {
-        int number = rnd.nextInt(10);
+        int number = rnd.nextInt(MAX);
 
         // save the chosen number to a file for posterity
         NumberWriter.writeToFile(number);

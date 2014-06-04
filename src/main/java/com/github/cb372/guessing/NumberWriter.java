@@ -11,8 +11,12 @@ import java.io.OutputStreamWriter;
 public class NumberWriter {
 
     static void writeToFile(Integer number) throws IOException {
-        OutputStreamWriter out = new OutputStreamWriter(new FileOutputStream("number.txt"));
-        out.write(number.toString());
+        try(
+                FileOutputStream stream = new FileOutputStream("number.txt");
+                OutputStreamWriter out = new OutputStreamWriter(stream)
+        ) {
+            out.write(number.toString());
+        }
     }
 
 }

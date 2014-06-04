@@ -6,12 +6,8 @@ package com.github.cb372.guessing;
  */
 public class Main {
 
-    static Game game = null;
-
     public static void main(String[] args) throws Exception {
-        game = new Game();
-
-        game.run();
+        new Game().run();
     }
 
 }
