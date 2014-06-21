@@ -7,4 +7,5 @@ Any mistakes or horrible code are (hopefully) deliberate!
 To run static analysis tools:
 
 ```
-mvn clean compile findbugs:findbugs pmd:
+mvn clean compile findbugs:findbugs pmd:pmd
+```
