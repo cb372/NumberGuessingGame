@@ -1,11 +1,3 @@
 # Number guessing game
 
-Sample app to demonstrate use of FindBugs, PMD and Checkstyle.
-
-Any mistakes or horrible code are (hopefully) deliberate!
-
-To run static analysis tools:
-
-```
-mvn clean compile findbugs:findbugs pmd:pmd
-```
+This project has moved! It now lives [inside the Re-Engineering Legacy Software repo](https://github.com/cb372/ReengLegacySoft/tree/master/02/NumberGuessingGame).
